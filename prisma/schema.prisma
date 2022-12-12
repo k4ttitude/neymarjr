@@ -9,3 +9,82 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model Tournament {
+  id      String  @id @default(cuid()) @db.VarChar
+  name    String  @db.VarChar
+  type    String  @db.VarChar
+  matches Match[]
+
+  @@map("tournaments")
+}
+
+model Team {
+  id         String      @id @default(cuid()) @db.VarChar
+  name       String      @db.VarChar
+  shortName  String      @db.VarChar(4)
+  matchTeams MatchTeam[]
+
+  @@map("teams")
+}
+
+model Match {
+  id              String      @id @default(cuid()) @db.VarChar
+  tournament      Tournament  @relation(fields: [tournamentId], references: [id])
+  tournamentId    String      @db.VarChar
+  kickOff         DateTime    @db.Timestamptz
+  extraTime       Boolean     @db.Boolean
+  penaltyShootout Boolean     @db.Boolean
+  matchTeams      MatchTeam[]
+
+  @@map("matches")
+}
+
+model MatchTeam {
+  id          String       @id @default(cuid()) @db.VarChar
+  match       Match        @relation(fields: [matchId], references: [id])
+  matchId     String       @db.VarChar
+  teamId      String       @db.VarChar
+  team        Team         @relation(fields: [teamId], references: [id])
+  matchEvents MatchEvent[]
+
+  @@unique([matchId, teamId])
+  @@map("match-teams")
+}
+
+enum MatchEventType {
+  GOAL
+  YELLOW_CARD
+  RED_CARD
+  SUBSTITUTION
+}
+
+model MatchEvent {
+  id               String            @id @default(cuid()) @db.VarChar
+  matchTeamId      String            @db.VarChar
+  matchTeam        MatchTeam         @relation(fields: [matchTeamId], references: [id])
+  type             MatchEventType
+  minute           Int               @db.Integer
+  matchEventActors MatchEventActor[]
+
+  @@map("match-events")
+}
+
+enum MatchEventActorType {
+  SCORER
+  ASSIST
+  OG
+  CARD_TAKER
+  SUB_IN
+  SUB_OUT
+}
+
+model MatchEventActor {
+  id           String              @id @default(cuid()) @db.VarChar
+  matchEvent   MatchEvent          @relation(fields: [matchEventId], references: [id])
+  matchEventId String              @db.VarChar
+  player       String              @db.VarChar
+  type         MatchEventActorType
+
+  @@map("match-event-actors")
+}
