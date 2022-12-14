@@ -4,7 +4,11 @@ type InvalidKey = `$${string}`;
 type ValidKey<Keys> = Keys extends InvalidKey ? never : Keys;
 type Key<T> = ValidKey<keyof T>;
 
-export class CrudService<Entity, CreateDto, UpdateDto> {
+export class CrudService<
+  Entity,
+  CreateDto extends Omit<Entity, 'id'>,
+  UpdateDto extends Partial<CreateDto>,
+> {
   name: Key<PrismaClient>;
 
   constructor(name: Key<PrismaClient>, readonly prisma: PrismaClient) {
