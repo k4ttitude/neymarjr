@@ -2,17 +2,16 @@ version: '3.9'
 
 services:
   db:
-    image: postgres:alpine
-    # restart: always
+    image: mysql:latest
+    restart: always
     environment:
-      POSTGRES_USER: ${POSTGRES_USER:-pg}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-pg}
-      POSTGRES_DB: ${POSTGRES_DB:-football}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-root}
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-football}
     ports:
-      - 5432:5432
+      - 3306:3306
+      - 33060:33060
     volumes:
-      - "postgres-data:/var/lib/postgresql/data"
-  
+      - "mysql-data:/var/lib/mysql"
   # server:
   #   build: .
   #   restart: always
@@ -23,5 +22,5 @@ services:
   #   depends_on:
   #     - db
 volumes:
-  postgres-data:
+  mysql-data:
     driver: local

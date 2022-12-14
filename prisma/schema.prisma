@@ -6,22 +6,22 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "mysql"
   url      = env("DATABASE_URL")
 }
 
 model Tournament {
-  id      String  @id @default(cuid()) @db.VarChar
-  name    String  @db.VarChar
-  type    String  @db.VarChar
+  id      String  @id @default(cuid())
+  name    String
+  type    String
   matches Match[]
 
   @@map("tournaments")
 }
 
 model Team {
-  id         String      @id @default(cuid()) @db.VarChar
-  name       String      @db.VarChar
+  id         String      @id @default(cuid())
+  name       String
   shortName  String      @db.VarChar(4)
   matchTeams MatchTeam[]
 
@@ -29,22 +29,22 @@ model Team {
 }
 
 model Match {
-  id              String      @id @default(cuid()) @db.VarChar
+  id              String      @id @default(cuid())
   tournament      Tournament  @relation(fields: [tournamentId], references: [id])
-  tournamentId    String      @db.VarChar
-  kickOff         DateTime    @db.Timestamptz
-  extraTime       Boolean     @db.Boolean
-  penaltyShootout Boolean     @db.Boolean
+  tournamentId    String
+  kickOff         DateTime    @db.Timestamp()
+  extraTime       Boolean
+  penaltyShootout Boolean
   matchTeams      MatchTeam[]
 
   @@map("matches")
 }
 
 model MatchTeam {
-  id          String       @id @default(cuid()) @db.VarChar
+  id          String       @id @default(cuid())
   match       Match        @relation(fields: [matchId], references: [id])
-  matchId     String       @db.VarChar
-  teamId      String       @db.VarChar
+  matchId     String
+  teamId      String
   team        Team         @relation(fields: [teamId], references: [id])
   matchEvents MatchEvent[]
 
@@ -60,11 +60,11 @@ enum MatchEventType {
 }
 
 model MatchEvent {
-  id               String            @id @default(cuid()) @db.VarChar
-  matchTeamId      String            @db.VarChar
+  id               String            @id @default(cuid())
+  matchTeamId      String
   matchTeam        MatchTeam         @relation(fields: [matchTeamId], references: [id])
   type             MatchEventType
-  minute           Int               @db.Integer
+  minute           Int               @db.Int
   matchEventActors MatchEventActor[]
 
   @@map("match-events")
@@ -80,10 +80,10 @@ enum MatchEventActorType {
 }
 
 model MatchEventActor {
-  id           String              @id @default(cuid()) @db.VarChar
+  id           String              @id @default(cuid())
   matchEvent   MatchEvent          @relation(fields: [matchEventId], references: [id])
-  matchEventId String              @db.VarChar
-  player       String              @db.VarChar
+  matchEventId String
+  player       String
   type         MatchEventActorType
 
   @@map("match-event-actors")
