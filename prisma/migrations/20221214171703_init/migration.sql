@@ -2,8 +2,9 @@
 CREATE TABLE `tournaments` (
     `id` VARCHAR(191) NOT NULL,
     `name` VARCHAR(191) NOT NULL,
-    `type` VARCHAR(191) NOT NULL,
+    `type` ENUM('TOURNAMENT', 'CUP') NOT NULL,
 
+    UNIQUE INDEX `tournaments_name_key`(`name`),
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
@@ -13,6 +14,7 @@ CREATE TABLE `teams` (
     `name` VARCHAR(191) NOT NULL,
     `shortName` VARCHAR(4) NOT NULL,
 
+    UNIQUE INDEX `teams_name_key`(`name`),
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
