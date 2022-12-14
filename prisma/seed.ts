@@ -156,7 +156,7 @@ async function main() {
             type:
               item.type === MatchEventType.YELLOW_CARD
                 ? MatchEventActorType.CARD_TAKER
-                : 'SCORER',
+                : MatchEventActorType.SCORER,
             matchEventId: item.id,
           },
         }),
