@@ -10,8 +10,10 @@ import {
 import { MatchesService } from './matches.service';
 import { CreateMatchDto } from './dto/create-match.dto';
 import { UpdateMatchDto } from './dto/update-match.dto';
+import { ApiTags } from '@nestjs/swagger';
 
 @Controller('matches')
+@ApiTags('matches')
 export class MatchesController {
   constructor(private readonly matchesService: MatchesService) {}
 
