@@ -3,7 +3,7 @@ import { MatchEntity } from '../entities/match.entity';
 
 export class CreateMatchDto implements Omit<MatchEntity, 'id'> {
   @IsString()
-  tournamentId: string;
+  seasonId: string;
 
   @IsDateString()
   kickOff: Date;

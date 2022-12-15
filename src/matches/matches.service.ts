@@ -11,13 +11,9 @@ export class MatchesService extends CrudService<
   CreateMatchDto,
   UpdateMatchDto
 > {
-  constructor(prismaService: PrismaService) {
+  constructor(private prismaService: PrismaService) {
     super('match', prismaService);
   }
-
-  // create(createMatchDto: CreateMatchDto): Promise<MatchEntity> {
-  //   return this.prismaService.match.create({ data: createMatchDto });
-  // }
 
   // findAll(): Promise<MatchEntity[]> {
   //   return this.prismaService.match.findMany();

@@ -21,11 +21,10 @@ enum TournamentType {
 }
 
 model Tournament {
-  id      String         @id @default(uuid())
-  name    String         @unique
-  type    TournamentType
-  matches Match[]
-  Season  Season[]
+  id     String         @id @default(uuid())
+  name   String         @unique
+  type   TournamentType
+  Season Season[]
 
   @@map("tournaments")
 }
@@ -58,8 +57,6 @@ model Match {
   extraTime       Boolean?
   penaltyShootout Boolean?
   matchTeams      MatchTeam[]
-  Tournament      Tournament? @relation(fields: [tournamentId], references: [id], onDelete: Cascade)
-  tournamentId    String?
 
   @@map("matches")
 }

@@ -11,7 +11,7 @@ export class TournamentsService extends CrudService<
   CreateTournamentDto,
   UpdateTournamentDto
 > {
-  constructor(prismaService: PrismaService) {
+  constructor(private prismaService: PrismaService) {
     super('tournament', prismaService);
   }
 }
