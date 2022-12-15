@@ -1,4 +1,6 @@
-import { PrismaClient } from '@prisma/client';
+import { Prisma, PrismaClient } from '@prisma/client';
+
+type Transaction = Prisma.TransactionClient;
 
 type InvalidKey = `$${string}`;
 type ValidKey<Keys> = Keys extends InvalidKey ? never : Keys;
@@ -15,27 +17,53 @@ export class CrudService<
     this.name = name;
   }
 
-  create(createDto: CreateDto): Promise<Entity> {
-    const create = this.prisma[this.name].create;
-    return create.call(this, { data: createDto });
+  private runInTransaction<T>(
+    callback: (p: Transaction) => Promise<T>,
+    transaction?: Transaction,
+  ) {
+    return callback(transaction || this.prisma);
   }
 
-  findAll(): Promise<Entity[]> {
-    return this.prisma[this.name].findMany.call(this);
+  create(createDto: CreateDto, transaction?: Transaction): Promise<Entity> {
+    return this.runInTransaction((prisma) => {
+      const create = prisma[this.name].create;
+      return create.call(this, { data: createDto }) as Promise<Entity>;
+    }, transaction);
   }
 
-  findOne(id: string): Promise<Entity> {
-    return this.prisma[this.name].findUnique.call(this, { where: { id } });
+  findAll(transaction?: Transaction): Promise<Entity[]> {
+    return this.runInTransaction(
+      (prisma) => prisma[this.name].findMany.call(this),
+      transaction,
+    );
   }
 
-  update(id: string, updateDto: UpdateDto): Promise<Entity> {
-    return this.prisma[this.name].update.call(this, {
-      where: { id },
-      data: updateDto,
-    });
+  findOne(id: string, transaction?: Transaction): Promise<Entity> {
+    return this.runInTransaction(
+      (prisma) => prisma[this.name].findUnique.call(this, { where: { id } }),
+      transaction,
+    );
   }
 
-  remove(id: string): Promise<Entity> {
-    return this.prisma[this.name].delete.call(this, { where: { id } });
+  update(
+    id: string,
+    updateDto: UpdateDto,
+    transaction?: Transaction,
+  ): Promise<Entity> {
+    return this.runInTransaction(
+      (prisma) =>
+        prisma[this.name].update.call(this, {
+          where: { id },
+          data: updateDto,
+        }),
+      transaction,
+    );
+  }
+
+  remove(id: string, transaction?: Transaction): Promise<Entity> {
+    return this.runInTransaction(
+      (prisma) => prisma[this.name].delete.call(this, { where: { id } }),
+      transaction,
+    );
   }
 }
