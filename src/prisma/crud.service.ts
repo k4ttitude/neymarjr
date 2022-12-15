@@ -1,3 +1,4 @@
+import { NotFoundException } from '@nestjs/common';
 import { Prisma, PrismaClient } from '@prisma/client';
 
 type Transaction = Prisma.TransactionClient;
@@ -7,7 +8,7 @@ type ValidKey<Keys> = Keys extends InvalidKey ? never : Keys;
 type Key<T> = ValidKey<keyof T>;
 
 export class CrudService<
-  Entity,
+  Entity extends { id: string },
   CreateDto extends Omit<Entity, 'id'>,
   UpdateDto extends Partial<CreateDto>,
 > {
@@ -39,10 +40,14 @@ export class CrudService<
   }
 
   findOne(id: string, transaction?: Transaction): Promise<Entity> {
-    return this.runInTransaction(
-      (prisma) => prisma[this.name].findUnique.call(this, { where: { id } }),
-      transaction,
-    );
+    return this.runInTransaction(async (prisma) => {
+      const record = await prisma[this.name].findUnique.call(this, {
+        where: { id },
+      });
+      if (!record) throw new NotFoundException(`${this.name} not found: ${id}`);
+
+      return record;
+    }, transaction);
   }
 
   update(
@@ -50,20 +55,20 @@ export class CrudService<
     updateDto: UpdateDto,
     transaction?: Transaction,
   ): Promise<Entity> {
-    return this.runInTransaction(
-      (prisma) =>
-        prisma[this.name].update.call(this, {
-          where: { id },
-          data: updateDto,
-        }),
-      transaction,
-    );
+    return this.runInTransaction(async (prisma) => {
+      const exist = await this.findOne(id, prisma);
+      const result = await prisma[this.name].update.call(this, {
+        where: { id: exist.id },
+        data: updateDto,
+      });
+      return result;
+    }, transaction);
   }
 
   remove(id: string, transaction?: Transaction): Promise<Entity> {
-    return this.runInTransaction(
-      (prisma) => prisma[this.name].delete.call(this, { where: { id } }),
-      transaction,
-    );
+    return this.runInTransaction(async (prisma) => {
+      const exist = await this.findOne(id, prisma);
+      return prisma[this.name].delete.call(this, { where: { id: exist.id } });
+    }, transaction);
   }
 }
