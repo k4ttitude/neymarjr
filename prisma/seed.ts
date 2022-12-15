@@ -12,7 +12,7 @@ const prisma = new PrismaClient();
 const TOURNAMENTS: Pick<Tournament, 'name' | 'type'>[] = [
   {
     name: 'Premier League',
-    type: TournamentType.TOURNAMENT,
+    type: TournamentType.LEAGUE,
   },
   //   {
   //     name: 'Laliga',

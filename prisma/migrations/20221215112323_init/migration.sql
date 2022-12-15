@@ -2,7 +2,7 @@
 CREATE TABLE `tournaments` (
     `id` VARCHAR(191) NOT NULL,
     `name` VARCHAR(191) NOT NULL,
-    `type` ENUM('TOURNAMENT', 'CUP') NOT NULL,
+    `type` ENUM('LEAGUE', 'CUP') NOT NULL,
 
     UNIQUE INDEX `tournaments_name_key`(`name`),
     PRIMARY KEY (`id`)

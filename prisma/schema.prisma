@@ -11,12 +11,12 @@ datasource db {
 }
 
 enum TournamentType {
-  TOURNAMENT
+  LEAGUE
   CUP
 }
 
 model Tournament {
-  id      String         @id @default(cuid())
+  id      String         @id @default(uuid())
   name    String         @unique
   type    TournamentType
   matches Match[]
@@ -25,7 +25,7 @@ model Tournament {
 }
 
 model Team {
-  id         String      @id @default(cuid())
+  id         String      @id @default(uuid())
   name       String      @unique
   shortName  String      @db.VarChar(4)
   matchTeams MatchTeam[]
@@ -34,7 +34,7 @@ model Team {
 }
 
 model Match {
-  id              String      @id @default(cuid())
+  id              String      @id @default(uuid())
   tournament      Tournament  @relation(fields: [tournamentId], references: [id])
   tournamentId    String
   kickOff         DateTime    @db.Timestamp()
@@ -46,7 +46,7 @@ model Match {
 }
 
 model MatchTeam {
-  id          String       @id @default(cuid())
+  id          String       @id @default(uuid())
   match       Match        @relation(fields: [matchId], references: [id])
   matchId     String
   teamId      String
@@ -65,7 +65,7 @@ enum MatchEventType {
 }
 
 model MatchEvent {
-  id               String            @id @default(cuid())
+  id               String            @id @default(uuid())
   matchTeamId      String
   matchTeam        MatchTeam         @relation(fields: [matchTeamId], references: [id])
   type             MatchEventType
@@ -85,7 +85,7 @@ enum MatchEventActorType {
 }
 
 model MatchEventActor {
-  id           String              @id @default(cuid())
+  id           String              @id @default(uuid())
   matchEvent   MatchEvent          @relation(fields: [matchEventId], references: [id])
   matchEventId String
   player       String
