@@ -1,4 +1,5 @@
 import {
+  Match,
   MatchEventActorType,
   MatchEventType,
   PrismaClient,
@@ -14,36 +15,36 @@ const TOURNAMENTS: Pick<Tournament, 'name' | 'type'>[] = [
     name: 'Premier League',
     type: TournamentType.LEAGUE,
   },
-  //   {
-  //     name: 'Laliga',
-  //     type: TournamentType.TOURNAMENT,
-  //   },
+  {
+    name: 'LaLiga',
+    type: TournamentType.LEAGUE,
+  },
 ];
 
-const TEAMS: Pick<Team, 'name' | 'shortName'>[] = [
+const EPL_TEAMS: Pick<Team, 'name' | 'shortName'>[] = [
   {
     name: 'Arsenal',
     shortName: 'ARS',
   },
   {
     name: 'Manchester City',
-    shortName: 'MC',
+    shortName: 'MCI',
   },
   {
     name: 'Tottenham Hotspur',
-    shortName: 'Spur',
+    shortName: 'TOT',
   },
   {
     name: 'Chelsea',
-    shortName: 'Chel',
+    shortName: 'CHE',
   },
   {
     name: 'Liverpool',
-    shortName: 'Liv',
+    shortName: 'LIV',
   },
   {
     name: 'Manchester United',
-    shortName: 'MU',
+    shortName: 'MUN',
   },
 ];
 
@@ -52,7 +53,7 @@ async function main() {
   const tournaments = await Promise.all(
     TOURNAMENTS.map((item) =>
       prisma.tournament.upsert({
-        where: { id: '' },
+        where: { name: item.name },
         update: {},
         create: item,
       }),
@@ -61,9 +62,9 @@ async function main() {
 
   // seed teams
   const teams = await Promise.all(
-    TEAMS.map((item) =>
+    EPL_TEAMS.map((item) =>
       prisma.team.upsert({
-        where: { id: '' },
+        where: { name: item.name },
         update: {},
         create: item,
       }),
@@ -72,7 +73,7 @@ async function main() {
 
   // seed matches
   const matches = await Promise.all(
-    [...Array(teams.length / 2).keys()].map(() =>
+    Array.from({ length: teams.length / 2 }).map(() =>
       prisma.match.upsert({
         where: { id: '' },
         update: {},
