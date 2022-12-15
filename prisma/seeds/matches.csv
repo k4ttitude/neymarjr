@@ -1,0 +1,381 @@
+date,kickoffTime,homeTeam,awayTeam,venue
+2022-08-05,08:00:00 PM,Crystal Palace,Arsenal,Selhurst Park
+2022-08-06,12:30:00 PM,Fulham,Liverpool,Craven Cottage
+2022-08-06,03:00:00 PM,AFC Bournemouth,Aston Villa,Vitality Stadium
+2022-08-06,03:00:00 PM,Leeds United,Wolverhampton Wanderers,Elland Road
+2022-08-06,03:00:00 PM,Newcastle United,Nottingham Forest,St. James' Park
+2022-08-06,03:00:00 PM,Tottenham Hotspur,Southampton,Tottenham Hotspur Stadium
+2022-08-06,05:30:00 PM,Everton,Chelsea,Goodison Park
+2022-08-07,02:00:00 PM,Leicester City,Brentford,King Power Stadium
+2022-08-07,02:00:00 PM,Manchester United,Brighton & Hove Albion,Old Trafford
+2022-08-07,04:30:00 PM,West Ham United,Manchester City,London Stadium
+2022-08-13,12:30:00 PM,Aston Villa,Everton,Villa Park
+2022-08-13,03:00:00 PM,Arsenal,Leicester City,Emirates Stadium
+2022-08-13,03:00:00 PM,Brighton & Hove Albion,Newcastle United,Amex Stadium
+2022-08-13,03:00:00 PM,Manchester City,AFC Bournemouth,Etihad Stadium
+2022-08-13,03:00:00 PM,Southampton,Leeds United,St. Mary's Stadium
+2022-08-13,03:00:00 PM,Wolverhampton Wanderers,Fulham,Molineux Stadium
+2022-08-13,05:30:00 PM,Brentford,Manchester United,Brentford Community Stadium
+2022-08-14,02:00:00 PM,Nottingham Forest,West Ham United,The City Ground
+2022-08-14,04:30:00 PM,Chelsea,Tottenham Hotspur,Stamford Bridge
+2022-08-15,08:00:00 PM,Liverpool,Crystal Palace,Anfield
+2022-08-20,12:30:00 PM,Tottenham Hotspur,Wolverhampton Wanderers,Tottenham Hotspur Stadium
+2022-08-20,03:00:00 PM,Crystal Palace,Aston Villa,Selhurst Park
+2022-08-20,03:00:00 PM,Everton,Nottingham Forest,Goodison Park
+2022-08-20,03:00:00 PM,Fulham,Brentford,Craven Cottage
+2022-08-20,03:00:00 PM,Leicester City,Southampton,King Power Stadium
+2022-08-20,05:30:00 PM,AFC Bournemouth,Arsenal,Vitality Stadium
+2022-08-21,02:00:00 PM,Leeds United,Chelsea,Elland Road
+2022-08-21,02:00:00 PM,West Ham United,Brighton & Hove Albion,London Stadium
+2022-08-21,04:30:00 PM,Newcastle United,Manchester City,St. James' Park
+2022-08-22,08:00:00 PM,Manchester United,Liverpool,Old Trafford
+2022-08-27,12:30:00 PM,Southampton,Manchester United,St. Mary's Stadium
+2022-08-27,03:00:00 PM,Brentford,Everton,Brentford Community Stadium
+2022-08-27,03:00:00 PM,Brighton & Hove Albion,Leeds United,Amex Stadium
+2022-08-27,03:00:00 PM,Chelsea,Leicester City,Stamford Bridge
+2022-08-27,03:00:00 PM,Liverpool,AFC Bournemouth,Anfield
+2022-08-27,03:00:00 PM,Manchester City,Crystal Palace,Etihad Stadium
+2022-08-27,05:30:00 PM,Arsenal,Fulham,Emirates Stadium
+2022-08-28,02:00:00 PM,Aston Villa,West Ham United,Villa Park
+2022-08-28,02:00:00 PM,Wolverhampton Wanderers,Newcastle United,Molineux Stadium
+2022-08-28,04:30:00 PM,Nottingham Forest,Tottenham Hotspur,The City Ground
+2022-08-30,07:30:00 PM,Crystal Palace,Brentford,Selhurst Park
+2022-08-30,07:30:00 PM,Fulham,Brighton & Hove Albion,Craven Cottage
+2022-08-30,07:45:00 PM,Southampton,Chelsea,St. Mary's Stadium
+2022-08-30,08:00:00 PM,Leeds United,Everton,Elland Road
+2022-08-31,07:30:00 PM,Arsenal,Aston Villa,Vitality Stadium
+2022-08-31,07:30:00 PM,AFC Bournemouth,Wolverhampton Wanderers,Emirates Stadium
+2022-08-31,07:30:00 PM,Manchester City,Nottingham Forest,Etihad Stadium
+2022-08-31,07:45:00 PM,West Ham United,Tottenham Hotspur,London Stadium
+2022-08-31,08:00:00 PM,Liverpool,Newcastle United,Anfield
+2022-09-01,08:00:00 PM,Leicester City,Manchester United,King Power Stadium
+2022-09-03,12:30:00 PM,Everton,Liverpool,Goodison Park
+2022-09-03,03:00:00 PM,Brentford,Leeds United,Brentford Community Stadium
+2022-09-03,03:00:00 PM,Newcastle United,Crystal Palace,St. James' Park
+2022-09-03,03:00:00 PM,Nottingham Forest,AFC Bournemouth,The City Ground
+2022-09-03,03:00:00 PM,Tottenham Hotspur,Fulham,Tottenham Hotspur Stadium
+2022-09-03,03:00:00 PM,Wolverhampton Wanderers,Southampton,Molineux Stadium
+2022-09-03,05:30:00 PM,Aston Villa,Manchester City,Villa Park
+2022-09-04,02:00:00 PM,Brighton & Hove Albion,Leicester City,Amex Stadium
+2022-09-04,02:00:00 PM,Chelsea,West Ham United,Stamford Bridge
+2022-09-04,04:30:00 PM,Manchester United,Arsenal,Old Trafford
+2022-09-10,12:30:00 PM,Fulham,Chelsea,Craven Cottage
+2022-09-10,03:00:00 PM,AFC Bournemouth,Brighton & Hove Albion,Vitality Stadium
+2022-09-10,03:00:00 PM,Leicester City,Aston Villa,King Power Stadium
+2022-09-10,03:00:00 PM,Liverpool,Wolverhampton Wanderers,Anfield
+2022-09-10,03:00:00 PM,Southampton,Brentford,St. Mary's Stadium
+2022-09-10,05:30:00 PM,Manchester City,Tottenham Hotspur,Etihad Stadium
+2022-09-11,02:00:00 PM,Arsenal,Everton,Emirates Stadium
+2022-09-11,02:00:00 PM,West Ham United,Newcastle United,London Stadium
+2022-09-11,04:30:00 PM,Crystal Palace,Manchester United,Selhurst Park
+2022-09-12,08:00:00 PM,Leeds United,Nottingham Forest,Elland Road
+2022-09-16,08:00:00 PM,Aston Villa,Southampton,Villa Park
+2022-09-16,08:00:00 PM,Nottingham Forest,Fulham,The City Ground
+2022-09-17,12:30:00 PM,Wolverhampton Wanderers,Manchester City,Molineux Stadium
+2022-09-17,03:00:00 PM,Brighton & Hove Albion,Crystal Palace,Amex Stadium
+2022-09-17,03:00:00 PM,Everton,West Ham United,Goodison Park
+2022-09-17,03:00:00 PM,Newcastle United,AFC Bournemouth,St. James' Park
+2022-09-17,05:30:00 PM,Tottenham Hotspur,Leicester City,Tottenham Hotspur Stadium
+2022-09-18,02:00:00 PM,Brentford,Arsenal,Brentford Community Stadium
+2022-09-18,02:00:00 PM,Manchester United,Leeds United,Old Trafford
+2022-09-18,04:30:00 PM,Chelsea,Liverpool,Stamford Bridge
+2022-10-01,03:00:00 PM,Arsenal,Tottenham Hotspur,Vitality Stadium
+2022-10-01,03:00:00 PM,AFC Bournemouth,Brentford,Emirates Stadium
+2022-10-01,03:00:00 PM,Crystal Palace,Chelsea,Selhurst Park
+2022-10-01,03:00:00 PM,Fulham,Newcastle United,Craven Cottage
+2022-10-01,03:00:00 PM,Leeds United,Aston Villa,Elland Road
+2022-10-01,03:00:00 PM,Leicester City,Nottingham Forest,King Power Stadium
+2022-10-01,03:00:00 PM,Liverpool,Brighton & Hove Albion,Anfield
+2022-10-01,03:00:00 PM,Manchester City,Manchester United,Etihad Stadium
+2022-10-01,03:00:00 PM,Southampton,Everton,St. Mary's Stadium
+2022-10-01,03:00:00 PM,West Ham United,Wolverhampton Wanderers,London Stadium
+2022-10-08,03:00:00 PM,Arsenal,Liverpool,Vitality Stadium
+2022-10-08,03:00:00 PM,AFC Bournemouth,Leicester City,Emirates Stadium
+2022-10-08,03:00:00 PM,Brighton & Hove Albion,Tottenham Hotspur,Amex Stadium
+2022-10-08,03:00:00 PM,Chelsea,Wolverhampton Wanderers,Stamford Bridge
+2022-10-08,03:00:00 PM,Crystal Palace,Leeds United,Selhurst Park
+2022-10-08,03:00:00 PM,Everton,Manchester United,Goodison Park
+2022-10-08,03:00:00 PM,Manchester City,Southampton,Etihad Stadium
+2022-10-08,03:00:00 PM,Newcastle United,Brentford,St. James' Park
+2022-10-08,03:00:00 PM,Nottingham Forest,Aston Villa,The City Ground
+2022-10-08,03:00:00 PM,West Ham United,Fulham,London Stadium
+2022-10-15,03:00:00 PM,Aston Villa,Chelsea,Villa Park
+2022-10-15,03:00:00 PM,Brentford,Brighton & Hove Albion,Brentford Community Stadium
+2022-10-15,03:00:00 PM,Fulham,AFC Bournemouth,Craven Cottage
+2022-10-15,03:00:00 PM,Leeds United,Arsenal,Elland Road
+2022-10-15,03:00:00 PM,Leicester City,Crystal Palace,King Power Stadium
+2022-10-15,03:00:00 PM,Liverpool,Manchester City,Anfield
+2022-10-15,03:00:00 PM,Manchester United,Newcastle United,Old Trafford
+2022-10-15,03:00:00 PM,Southampton,West Ham United,St. Mary's Stadium
+2022-10-15,03:00:00 PM,Tottenham Hotspur,Everton,Tottenham Hotspur Stadium
+2022-10-15,03:00:00 PM,Wolverhampton Wanderers,Nottingham Forest,Molineux Stadium
+2022-10-18,07:45:00 PM,Arsenal,Manchester City,Vitality Stadium
+2022-10-18,07:45:00 PM,AFC Bournemouth,Southampton,Emirates Stadium
+2022-10-18,07:45:00 PM,Brentford,Chelsea,Brentford Community Stadium
+2022-10-18,07:45:00 PM,Brighton & Hove Albion,Nottingham Forest,Amex Stadium
+2022-10-18,07:45:00 PM,Fulham,Aston Villa,Craven Cottage
+2022-10-18,07:45:00 PM,Leicester City,Leeds United,King Power Stadium
+2022-10-18,08:00:00 PM,Crystal Palace,Wolverhampton Wanderers,Selhurst Park
+2022-10-19,07:45:00 PM,Newcastle United,Everton,St. James' Park
+2022-10-19,08:00:00 PM,Liverpool,West Ham United,Anfield
+2022-10-19,08:00:00 PM,Manchester United,Tottenham Hotspur,Old Trafford
+2022-10-22,03:00:00 PM,Aston Villa,Brentford,Villa Park
+2022-10-22,03:00:00 PM,Chelsea,Manchester United,Stamford Bridge
+2022-10-22,03:00:00 PM,Everton,Crystal Palace,Goodison Park
+2022-10-22,03:00:00 PM,Leeds United,Fulham,Elland Road
+2022-10-22,03:00:00 PM,Manchester City,Brighton & Hove Albion,Etihad Stadium
+2022-10-22,03:00:00 PM,Nottingham Forest,Liverpool,The City Ground
+2022-10-22,03:00:00 PM,Southampton,Arsenal,St. Mary's Stadium
+2022-10-22,03:00:00 PM,Tottenham Hotspur,Newcastle United,Tottenham Hotspur Stadium
+2022-10-22,03:00:00 PM,West Ham United,AFC Bournemouth,London Stadium
+2022-10-22,03:00:00 PM,Wolverhampton Wanderers,Leicester City,Molineux Stadium
+2022-10-29,03:00:00 PM,Arsenal,Nottingham Forest,Vitality Stadium
+2022-10-29,03:00:00 PM,AFC Bournemouth,Tottenham Hotspur,Emirates Stadium
+2022-10-29,03:00:00 PM,Brentford,Wolverhampton Wanderers,Brentford Community Stadium
+2022-10-29,03:00:00 PM,Brighton & Hove Albion,Chelsea,Amex Stadium
+2022-10-29,03:00:00 PM,Crystal Palace,Southampton,Selhurst Park
+2022-10-29,03:00:00 PM,Fulham,Everton,Craven Cottage
+2022-10-29,03:00:00 PM,Leicester City,Manchester City,King Power Stadium
+2022-10-29,03:00:00 PM,Liverpool,Leeds United,Anfield
+2022-10-29,03:00:00 PM,Manchester United,West Ham United,Old Trafford
+2022-10-29,03:00:00 PM,Newcastle United,Aston Villa,St. James' Park
+2022-11-05,03:00:00 PM,Aston Villa,Manchester United,Villa Park
+2022-11-05,03:00:00 PM,Chelsea,Arsenal,Stamford Bridge
+2022-11-05,03:00:00 PM,Everton,Leicester City,Goodison Park
+2022-11-05,03:00:00 PM,Leeds United,AFC Bournemouth,Elland Road
+2022-11-05,03:00:00 PM,Manchester City,Fulham,Etihad Stadium
+2022-11-05,03:00:00 PM,Nottingham Forest,Brentford,The City Ground
+2022-11-05,03:00:00 PM,Southampton,Newcastle United,St. Mary's Stadium
+2022-11-05,03:00:00 PM,Tottenham Hotspur,Liverpool,Tottenham Hotspur Stadium
+2022-11-05,03:00:00 PM,West Ham United,Crystal Palace,London Stadium
+2022-11-05,03:00:00 PM,Wolverhampton Wanderers,Brighton & Hove Albion,Molineux Stadium
+2022-11-12,03:00:00 PM,AFC Bournemouth,Everton,Vitality Stadium
+2022-11-12,03:00:00 PM,Brighton & Hove Albion,Aston Villa,Amex Stadium
+2022-11-12,03:00:00 PM,Fulham,Manchester United,Craven Cottage
+2022-11-12,03:00:00 PM,Liverpool,Southampton,Anfield
+2022-11-12,03:00:00 PM,Manchester City,Brentford,Etihad Stadium
+2022-11-12,03:00:00 PM,Newcastle United,Chelsea,St. James' Park
+2022-11-12,03:00:00 PM,Nottingham Forest,Crystal Palace,The City Ground
+2022-11-12,03:00:00 PM,Tottenham Hotspur,Leeds United,Tottenham Hotspur Stadium
+2022-11-12,03:00:00 PM,West Ham United,Leicester City,London Stadium
+2022-11-12,03:00:00 PM,Wolverhampton Wanderers,Arsenal,Molineux Stadium
+2022-12-26,03:00:00 PM,Arsenal,West Ham United,Emirates Stadium
+2022-12-26,03:00:00 PM,Aston Villa,Liverpool,Villa Park
+2022-12-26,03:00:00 PM,Brentford,Tottenham Hotspur,Brentford Community Stadium
+2022-12-26,03:00:00 PM,Chelsea,AFC Bournemouth,Stamford Bridge
+2022-12-26,03:00:00 PM,Crystal Palace,Fulham,Selhurst Park
+2022-12-26,03:00:00 PM,Everton,Wolverhampton Wanderers,Goodison Park
+2022-12-26,03:00:00 PM,Leeds United,Manchester City,Elland Road
+2022-12-26,03:00:00 PM,Leicester City,Newcastle United,King Power Stadium
+2022-12-26,03:00:00 PM,Manchester United,Nottingham Forest,Old Trafford
+2022-12-26,03:00:00 PM,Southampton,Brighton & Hove Albion,St. Mary's Stadium
+2022-12-31,03:00:00 PM,AFC Bournemouth,Crystal Palace,Vitality Stadium
+2022-12-31,03:00:00 PM,Brighton & Hove Albion,Arsenal,Amex Stadium
+2022-12-31,03:00:00 PM,Fulham,Southampton,Craven Cottage
+2022-12-31,03:00:00 PM,Liverpool,Leicester City,Anfield
+2022-12-31,03:00:00 PM,Manchester City,Everton,Etihad Stadium
+2022-12-31,03:00:00 PM,Newcastle United,Leeds United,St. James' Park
+2022-12-31,03:00:00 PM,Nottingham Forest,Chelsea,The City Ground
+2022-12-31,03:00:00 PM,Tottenham Hotspur,Aston Villa,Tottenham Hotspur Stadium
+2022-12-31,03:00:00 PM,West Ham United,Brentford,London Stadium
+2022-12-31,03:00:00 PM,Wolverhampton Wanderers,Manchester United,Molineux Stadium
+2023-01-02,03:00:00 PM,Arsenal,Newcastle United,Emirates Stadium
+2023-01-02,03:00:00 PM,Aston Villa,Wolverhampton Wanderers,Villa Park
+2023-01-02,03:00:00 PM,Brentford,Liverpool,Brentford Community Stadium
+2023-01-02,03:00:00 PM,Chelsea,Manchester City,Stamford Bridge
+2023-01-02,03:00:00 PM,Crystal Palace,Tottenham Hotspur,Selhurst Park
+2023-01-02,03:00:00 PM,Everton,Brighton & Hove Albion,Goodison Park
+2023-01-02,03:00:00 PM,Leeds United,West Ham United,Elland Road
+2023-01-02,03:00:00 PM,Leicester City,Fulham,King Power Stadium
+2023-01-02,03:00:00 PM,Manchester United,AFC Bournemouth,Old Trafford
+2023-01-02,03:00:00 PM,Southampton,Nottingham Forest,St. Mary's Stadium
+2023-01-14,03:00:00 PM,Aston Villa,Leeds United,Villa Park
+2023-01-14,03:00:00 PM,Brentford,AFC Bournemouth,Brentford Community Stadium
+2023-01-14,03:00:00 PM,Brighton & Hove Albion,Liverpool,Amex Stadium
+2023-01-14,03:00:00 PM,Chelsea,Crystal Palace,Stamford Bridge
+2023-01-14,03:00:00 PM,Everton,Southampton,Goodison Park
+2023-01-14,03:00:00 PM,Manchester United,Manchester City,Old Trafford
+2023-01-14,03:00:00 PM,Newcastle United,Fulham,St. James' Park
+2023-01-14,03:00:00 PM,Nottingham Forest,Leicester City,The City Ground
+2023-01-14,03:00:00 PM,Tottenham Hotspur,Arsenal,Tottenham Hotspur Stadium
+2023-01-14,03:00:00 PM,Wolverhampton Wanderers,West Ham United,Molineux Stadium
+2023-01-21,03:00:00 PM,Arsenal,Manchester United,Vitality Stadium
+2023-01-21,03:00:00 PM,AFC Bournemouth,Nottingham Forest,Emirates Stadium
+2023-01-21,03:00:00 PM,Crystal Palace,Newcastle United,Selhurst Park
+2023-01-21,03:00:00 PM,Fulham,Tottenham Hotspur,Craven Cottage
+2023-01-21,03:00:00 PM,Leeds United,Brentford,Elland Road
+2023-01-21,03:00:00 PM,Leicester City,Brighton & Hove Albion,King Power Stadium
+2023-01-21,03:00:00 PM,Liverpool,Chelsea,Anfield
+2023-01-21,03:00:00 PM,Manchester City,Wolverhampton Wanderers,Etihad Stadium
+2023-01-21,03:00:00 PM,Southampton,Aston Villa,St. Mary's Stadium
+2023-01-21,03:00:00 PM,West Ham United,Everton,London Stadium
+2023-02-04,03:00:00 PM,Aston Villa,Leicester City,Villa Park
+2023-02-04,03:00:00 PM,Brentford,Southampton,Brentford Community Stadium
+2023-02-04,03:00:00 PM,Brighton & Hove Albion,AFC Bournemouth,Amex Stadium
+2023-02-04,03:00:00 PM,Chelsea,Fulham,Stamford Bridge
+2023-02-04,03:00:00 PM,Everton,Arsenal,Goodison Park
+2023-02-04,03:00:00 PM,Manchester United,Crystal Palace,Old Trafford
+2023-02-04,03:00:00 PM,Newcastle United,West Ham United,St. James' Park
+2023-02-04,03:00:00 PM,Nottingham Forest,Leeds United,The City Ground
+2023-02-04,03:00:00 PM,Tottenham Hotspur,Manchester City,Tottenham Hotspur Stadium
+2023-02-04,03:00:00 PM,Wolverhampton Wanderers,Liverpool,Molineux Stadium
+2023-02-11,03:00:00 PM,Arsenal,Brentford,Vitality Stadium
+2023-02-11,03:00:00 PM,AFC Bournemouth,Newcastle United,Emirates Stadium
+2023-02-11,03:00:00 PM,Crystal Palace,Brighton & Hove Albion,Selhurst Park
+2023-02-11,03:00:00 PM,Fulham,Nottingham Forest,Craven Cottage
+2023-02-11,03:00:00 PM,Leeds United,Manchester United,Elland Road
+2023-02-11,03:00:00 PM,Leicester City,Tottenham Hotspur,King Power Stadium
+2023-02-11,03:00:00 PM,Liverpool,Everton,Anfield
+2023-02-11,03:00:00 PM,Manchester City,Aston Villa,Etihad Stadium
+2023-02-11,03:00:00 PM,Southampton,Wolverhampton Wanderers,St. Mary's Stadium
+2023-02-11,03:00:00 PM,West Ham United,Chelsea,London Stadium
+2023-02-18,03:00:00 PM,Aston Villa,Arsenal,Villa Park
+2023-02-18,03:00:00 PM,Brentford,Crystal Palace,Brentford Community Stadium
+2023-02-18,03:00:00 PM,Brighton & Hove Albion,Fulham,Amex Stadium
+2023-02-18,03:00:00 PM,Chelsea,Southampton,Stamford Bridge
+2023-02-18,03:00:00 PM,Everton,Leeds United,Goodison Park
+2023-02-18,03:00:00 PM,Manchester United,Leicester City,Old Trafford
+2023-02-18,03:00:00 PM,Newcastle United,Liverpool,St. James' Park
+2023-02-18,03:00:00 PM,Nottingham Forest,Manchester City,The City Ground
+2023-02-18,03:00:00 PM,Tottenham Hotspur,West Ham United,Tottenham Hotspur Stadium
+2023-02-18,03:00:00 PM,Wolverhampton Wanderers,AFC Bournemouth,Molineux Stadium
+2023-02-25,03:00:00 PM,AFC Bournemouth,Manchester City,Vitality Stadium
+2023-02-25,03:00:00 PM,Crystal Palace,Liverpool,Selhurst Park
+2023-02-25,03:00:00 PM,Everton,Aston Villa,Goodison Park
+2023-02-25,03:00:00 PM,Fulham,Wolverhampton Wanderers,Craven Cottage
+2023-02-25,03:00:00 PM,Leeds United,Southampton,Elland Road
+2023-02-25,03:00:00 PM,Leicester City,Arsenal,King Power Stadium
+2023-02-25,03:00:00 PM,Manchester United,Brentford,Old Trafford
+2023-02-25,03:00:00 PM,Newcastle United,Brighton & Hove Albion,St. James' Park
+2023-02-25,03:00:00 PM,Tottenham Hotspur,Chelsea,Tottenham Hotspur Stadium
+2023-02-25,03:00:00 PM,West Ham United,Nottingham Forest,London Stadium
+2023-03-04,03:00:00 PM,Arsenal,AFC Bournemouth,Emirates Stadium
+2023-03-04,03:00:00 PM,Aston Villa,Crystal Palace,Villa Park
+2023-03-04,03:00:00 PM,Brentford,Fulham,Brentford Community Stadium
+2023-03-04,03:00:00 PM,Brighton & Hove Albion,West Ham United,Amex Stadium
+2023-03-04,03:00:00 PM,Chelsea,Leeds United,Stamford Bridge
+2023-03-04,03:00:00 PM,Liverpool,Manchester United,Anfield
+2023-03-04,03:00:00 PM,Manchester City,Newcastle United,Etihad Stadium
+2023-03-04,03:00:00 PM,Nottingham Forest,Everton,The City Ground
+2023-03-04,03:00:00 PM,Southampton,Leicester City,St. Mary's Stadium
+2023-03-04,03:00:00 PM,Wolverhampton Wanderers,Tottenham Hotspur,Molineux Stadium
+2023-03-11,03:00:00 PM,AFC Bournemouth,Liverpool,Vitality Stadium
+2023-03-11,03:00:00 PM,Crystal Palace,Manchester City,Selhurst Park
+2023-03-11,03:00:00 PM,Everton,Brentford,Goodison Park
+2023-03-11,03:00:00 PM,Fulham,Arsenal,Craven Cottage
+2023-03-11,03:00:00 PM,Leeds United,Brighton & Hove Albion,Elland Road
+2023-03-11,03:00:00 PM,Leicester City,Chelsea,King Power Stadium
+2023-03-11,03:00:00 PM,Manchester United,Southampton,Old Trafford
+2023-03-11,03:00:00 PM,Newcastle United,Wolverhampton Wanderers,St. James' Park
+2023-03-11,03:00:00 PM,Tottenham Hotspur,Nottingham Forest,Tottenham Hotspur Stadium
+2023-03-11,03:00:00 PM,West Ham United,Aston Villa,London Stadium
+2023-03-18,03:00:00 PM,Arsenal,Crystal Palace,Emirates Stadium
+2023-03-18,03:00:00 PM,Aston Villa,AFC Bournemouth,Villa Park
+2023-03-18,03:00:00 PM,Brentford,Leicester City,Brentford Community Stadium
+2023-03-18,03:00:00 PM,Brighton & Hove Albion,Manchester United,Amex Stadium
+2023-03-18,03:00:00 PM,Chelsea,Everton,Stamford Bridge
+2023-03-18,03:00:00 PM,Liverpool,Fulham,Anfield
+2023-03-18,03:00:00 PM,Manchester City,West Ham United,Etihad Stadium
+2023-03-18,03:00:00 PM,Nottingham Forest,Newcastle United,The City Ground
+2023-03-18,03:00:00 PM,Southampton,Tottenham Hotspur,St. Mary's Stadium
+2023-03-18,03:00:00 PM,Wolverhampton Wanderers,Leeds United,Molineux Stadium
+2023-04-01,03:00:00 PM,Arsenal,Leeds United,Vitality Stadium
+2023-04-01,03:00:00 PM,AFC Bournemouth,Fulham,Emirates Stadium
+2023-04-01,03:00:00 PM,Brighton & Hove Albion,Brentford,Amex Stadium
+2023-04-01,03:00:00 PM,Chelsea,Aston Villa,Stamford Bridge
+2023-04-01,03:00:00 PM,Crystal Palace,Leicester City,Selhurst Park
+2023-04-01,03:00:00 PM,Everton,Tottenham Hotspur,Goodison Park
+2023-04-01,03:00:00 PM,Manchester City,Liverpool,Etihad Stadium
+2023-04-01,03:00:00 PM,Newcastle United,Manchester United,St. James' Park
+2023-04-01,03:00:00 PM,Nottingham Forest,Wolverhampton Wanderers,The City Ground
+2023-04-01,03:00:00 PM,West Ham United,Southampton,London Stadium
+2023-04-08,03:00:00 PM,Aston Villa,Nottingham Forest,Villa Park
+2023-04-08,03:00:00 PM,Brentford,Newcastle United,Brentford Community Stadium
+2023-04-08,03:00:00 PM,Fulham,West Ham United,Craven Cottage
+2023-04-08,03:00:00 PM,Leeds United,Crystal Palace,Elland Road
+2023-04-08,03:00:00 PM,Leicester City,AFC Bournemouth,King Power Stadium
+2023-04-08,03:00:00 PM,Liverpool,Arsenal,Anfield
+2023-04-08,03:00:00 PM,Manchester United,Everton,Old Trafford
+2023-04-08,03:00:00 PM,Southampton,Manchester City,St. Mary's Stadium
+2023-04-08,03:00:00 PM,Tottenham Hotspur,Brighton & Hove Albion,Tottenham Hotspur Stadium
+2023-04-08,03:00:00 PM,Wolverhampton Wanderers,Chelsea,Molineux Stadium
+2023-04-15,03:00:00 PM,Aston Villa,Newcastle United,Villa Park
+2023-04-15,03:00:00 PM,Chelsea,Brighton & Hove Albion,Stamford Bridge
+2023-04-15,03:00:00 PM,Everton,Fulham,Goodison Park
+2023-04-15,03:00:00 PM,Leeds United,Liverpool,Elland Road
+2023-04-15,03:00:00 PM,Manchester City,Leicester City,Etihad Stadium
+2023-04-15,03:00:00 PM,Nottingham Forest,Manchester United,The City Ground
+2023-04-15,03:00:00 PM,Southampton,Crystal Palace,St. Mary's Stadium
+2023-04-15,03:00:00 PM,Tottenham Hotspur,AFC Bournemouth,Tottenham Hotspur Stadium
+2023-04-15,03:00:00 PM,West Ham United,Arsenal,London Stadium
+2023-04-15,03:00:00 PM,Wolverhampton Wanderers,Brentford,Molineux Stadium
+2023-04-22,03:00:00 PM,Arsenal,Southampton,Vitality Stadium
+2023-04-22,03:00:00 PM,AFC Bournemouth,West Ham United,Emirates Stadium
+2023-04-22,03:00:00 PM,Brentford,Aston Villa,Brentford Community Stadium
+2023-04-22,03:00:00 PM,Brighton & Hove Albion,Manchester City,Amex Stadium
+2023-04-22,03:00:00 PM,Crystal Palace,Everton,Selhurst Park
+2023-04-22,03:00:00 PM,Fulham,Leeds United,Craven Cottage
+2023-04-22,03:00:00 PM,Leicester City,Wolverhampton Wanderers,King Power Stadium
+2023-04-22,03:00:00 PM,Liverpool,Nottingham Forest,Anfield
+2023-04-22,03:00:00 PM,Manchester United,Chelsea,Old Trafford
+2023-04-22,03:00:00 PM,Newcastle United,Tottenham Hotspur,St. James' Park
+2023-04-25,07:45:00 PM,Everton,Newcastle United,Goodison Park
+2023-04-25,07:45:00 PM,Leeds United,Leicester City,Elland Road
+2023-04-25,07:45:00 PM,Nottingham Forest,Brighton & Hove Albion,The City Ground
+2023-04-25,07:45:00 PM,Tottenham Hotspur,Manchester United,Tottenham Hotspur Stadium
+2023-04-25,07:45:00 PM,West Ham United,Liverpool,London Stadium
+2023-04-25,07:45:00 PM,Wolverhampton Wanderers,Crystal Palace,Molineux Stadium
+2023-04-25,08:00:00 PM,Aston Villa,Fulham,Villa Park
+2023-04-26,07:45:00 PM,Chelsea,Brentford,Stamford Bridge
+2023-04-26,07:45:00 PM,Southampton,AFC Bournemouth,St. Mary's Stadium
+2023-04-26,08:00:00 PM,Manchester City,Arsenal,Etihad Stadium
+2023-04-29,03:00:00 PM,Arsenal,Chelsea,Vitality Stadium
+2023-04-29,03:00:00 PM,AFC Bournemouth,Leeds United,Emirates Stadium
+2023-04-29,03:00:00 PM,Brentford,Nottingham Forest,Brentford Community Stadium
+2023-04-29,03:00:00 PM,Brighton & Hove Albion,Wolverhampton Wanderers,Amex Stadium
+2023-04-29,03:00:00 PM,Crystal Palace,West Ham United,Selhurst Park
+2023-04-29,03:00:00 PM,Fulham,Manchester City,Craven Cottage
+2023-04-29,03:00:00 PM,Leicester City,Everton,King Power Stadium
+2023-04-29,03:00:00 PM,Liverpool,Tottenham Hotspur,Anfield
+2023-04-29,03:00:00 PM,Manchester United,Aston Villa,Old Trafford
+2023-04-29,03:00:00 PM,Newcastle United,Southampton,St. James' Park
+2023-05-06,03:00:00 PM,AFC Bournemouth,Chelsea,Vitality Stadium
+2023-05-06,03:00:00 PM,Brighton & Hove Albion,Everton,Amex Stadium
+2023-05-06,03:00:00 PM,Fulham,Leicester City,Craven Cottage
+2023-05-06,03:00:00 PM,Liverpool,Brentford,Anfield
+2023-05-06,03:00:00 PM,Manchester City,Leeds United,Etihad Stadium
+2023-05-06,03:00:00 PM,Newcastle United,Arsenal,St. James' Park
+2023-05-06,03:00:00 PM,Nottingham Forest,Southampton,The City Ground
+2023-05-06,03:00:00 PM,Tottenham Hotspur,Crystal Palace,Tottenham Hotspur Stadium
+2023-05-06,03:00:00 PM,West Ham United,Manchester United,London Stadium
+2023-05-06,03:00:00 PM,Wolverhampton Wanderers,Aston Villa,Molineux Stadium
+2023-05-13,03:00:00 PM,Arsenal,Brighton & Hove Albion,Emirates Stadium
+2023-05-13,03:00:00 PM,Aston Villa,Tottenham Hotspur,Villa Park
+2023-05-13,03:00:00 PM,Brentford,West Ham United,Brentford Community Stadium
+2023-05-13,03:00:00 PM,Chelsea,Nottingham Forest,Stamford Bridge
+2023-05-13,03:00:00 PM,Crystal Palace,AFC Bournemouth,Selhurst Park
+2023-05-13,03:00:00 PM,Everton,Manchester City,Goodison Park
+2023-05-13,03:00:00 PM,Leeds United,Newcastle United,Elland Road
+2023-05-13,03:00:00 PM,Leicester City,Liverpool,King Power Stadium
+2023-05-13,03:00:00 PM,Manchester United,Wolverhampton Wanderers,Old Trafford
+2023-05-13,03:00:00 PM,Southampton,Fulham,St. Mary's Stadium
+2023-05-20,03:00:00 PM,AFC Bournemouth,Manchester United,Vitality Stadium
+2023-05-20,03:00:00 PM,Brighton & Hove Albion,Southampton,Amex Stadium
+2023-05-20,03:00:00 PM,Fulham,Crystal Palace,Craven Cottage
+2023-05-20,03:00:00 PM,Liverpool,Aston Villa,Anfield
+2023-05-20,03:00:00 PM,Manchester City,Chelsea,Etihad Stadium
+2023-05-20,03:00:00 PM,Newcastle United,Leicester City,St. James' Park
+2023-05-20,03:00:00 PM,Nottingham Forest,Arsenal,The City Ground
+2023-05-20,03:00:00 PM,Tottenham Hotspur,Brentford,Tottenham Hotspur Stadium
+2023-05-20,03:00:00 PM,West Ham United,Leeds United,London Stadium
+2023-05-20,03:00:00 PM,Wolverhampton Wanderers,Everton,Molineux Stadium
+2023-05-28,04:00:00 PM,Arsenal,Wolverhampton Wanderers,Emirates Stadium
+2023-05-28,04:00:00 PM,Aston Villa,Brighton & Hove Albion,Villa Park
+2023-05-28,04:00:00 PM,Brentford,Manchester City,Brentford Community Stadium
+2023-05-28,04:00:00 PM,Chelsea,Newcastle United,Stamford Bridge
+2023-05-28,04:00:00 PM,Crystal Palace,Nottingham Forest,Selhurst Park
+2023-05-28,04:00:00 PM,Everton,AFC Bournemouth,Goodison Park
+2023-05-28,04:00:00 PM,Leeds United,Tottenham Hotspur,Elland Road
+2023-05-28,04:00:00 PM,Leicester City,West Ham United,King Power Stadium
+2023-05-28,04:00:00 PM,Manchester United,Fulham,Old Trafford
+2023-05-28,04:00:00 PM,Southampton,Liverpool,St. Mary's Stadium
