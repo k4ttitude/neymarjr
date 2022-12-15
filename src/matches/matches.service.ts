@@ -1,33 +1,40 @@
 import { Injectable } from '@nestjs/common';
+import { CrudService } from '../prisma/crud.service';
 import { PrismaService } from '../prisma/prisma.service';
 import { CreateMatchDto } from './dto/create-match.dto';
 import { UpdateMatchDto } from './dto/update-match.dto';
 import { MatchEntity } from './entities/match.entity';
 
 @Injectable()
-export class MatchesService {
-  constructor(private prismaService: PrismaService) {}
-
-  create(createMatchDto: CreateMatchDto): Promise<MatchEntity> {
-    return this.prismaService.match.create({ data: createMatchDto });
+export class MatchesService extends CrudService<
+  MatchEntity,
+  CreateMatchDto,
+  UpdateMatchDto
+> {
+  constructor(prismaService: PrismaService) {
+    super('match', prismaService);
   }
 
-  findAll(): Promise<MatchEntity[]> {
-    return this.prismaService.match.findMany();
-  }
+  // create(createMatchDto: CreateMatchDto): Promise<MatchEntity> {
+  //   return this.prismaService.match.create({ data: createMatchDto });
+  // }
 
-  findOne(id: string): Promise<MatchEntity> {
-    return this.prismaService.match.findUnique({ where: { id } });
-  }
+  // findAll(): Promise<MatchEntity[]> {
+  //   return this.prismaService.match.findMany();
+  // }
 
-  update(id: string, updateMatchDto: UpdateMatchDto): Promise<MatchEntity> {
-    return this.prismaService.match.update({
-      where: { id },
-      data: updateMatchDto,
-    });
-  }
+  // findOne(id: string): Promise<MatchEntity> {
+  //   return this.prismaService.match.findUnique({ where: { id } });
+  // }
 
-  async remove(id: string): Promise<void> {
-    await this.prismaService.match.delete({ where: { id } });
-  }
+  // update(id: string, updateMatchDto: UpdateMatchDto): Promise<MatchEntity> {
+  //   return this.prismaService.match.update({
+  //     where: { id },
+  //     data: updateMatchDto,
+  //   });
+  // }
+
+  // remove(id: string): Promise<MatchEntity> {
+  //   return this.prismaService.match.delete({ where: { id } });
+  // }
 }
