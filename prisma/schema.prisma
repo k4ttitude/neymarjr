@@ -20,8 +20,20 @@ model Tournament {
   name    String         @unique
   type    TournamentType
   matches Match[]
+  Season  Season[]
 
   @@map("tournaments")
+}
+
+model Season {
+  id           String     @id @default(uuid())
+  name         String
+  tournamentId String
+  tournament   Tournament @relation(fields: [tournamentId], references: [id], onDelete: Cascade)
+  Match        Match[]
+
+  @@unique([name, tournamentId])
+  @@map("seasons")
 }
 
 model Team {
@@ -35,21 +47,24 @@ model Team {
 
 model Match {
   id              String      @id @default(uuid())
-  tournament      Tournament  @relation(fields: [tournamentId], references: [id])
-  tournamentId    String
-  kickOff         DateTime    @db.Timestamp()
-  extraTime       Boolean
-  penaltyShootout Boolean
+  season          Season      @relation(fields: [seasonId], references: [id])
+  seasonId        String
+  kickOff         DateTime?   @db.Timestamp()
+  extraTime       Boolean?
+  penaltyShootout Boolean?
   matchTeams      MatchTeam[]
+  Tournament      Tournament? @relation(fields: [tournamentId], references: [id], onDelete: Cascade)
+  tournamentId    String?
 
   @@map("matches")
 }
 
 model MatchTeam {
   id          String       @id @default(uuid())
-  match       Match        @relation(fields: [matchId], references: [id])
+  match       Match        @relation(fields: [matchId], references: [id], onDelete: Cascade)
   matchId     String
   teamId      String
+  isHome      Boolean?
   team        Team         @relation(fields: [teamId], references: [id])
   matchEvents MatchEvent[]
 
@@ -67,7 +82,7 @@ enum MatchEventType {
 model MatchEvent {
   id               String            @id @default(uuid())
   matchTeamId      String
-  matchTeam        MatchTeam         @relation(fields: [matchTeamId], references: [id])
+  matchTeam        MatchTeam         @relation(fields: [matchTeamId], references: [id], onDelete: Cascade)
   type             MatchEventType
   minute           Int               @db.Int
   matchEventActors MatchEventActor[]
@@ -86,7 +101,7 @@ enum MatchEventActorType {
 
 model MatchEventActor {
   id           String              @id @default(uuid())
-  matchEvent   MatchEvent          @relation(fields: [matchEventId], references: [id])
+  matchEvent   MatchEvent          @relation(fields: [matchEventId], references: [id], onDelete: Cascade)
   matchEventId String
   player       String
   type         MatchEventActorType

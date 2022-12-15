@@ -9,6 +9,16 @@ CREATE TABLE `tournaments` (
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 -- CreateTable
+CREATE TABLE `seasons` (
+    `id` VARCHAR(191) NOT NULL,
+    `name` VARCHAR(191) NOT NULL,
+    `tournamentId` VARCHAR(191) NOT NULL,
+
+    UNIQUE INDEX `seasons_name_tournamentId_key`(`name`, `tournamentId`),
+    PRIMARY KEY (`id`)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+-- CreateTable
 CREATE TABLE `teams` (
     `id` VARCHAR(191) NOT NULL,
     `name` VARCHAR(191) NOT NULL,
@@ -21,10 +31,11 @@ CREATE TABLE `teams` (
 -- CreateTable
 CREATE TABLE `matches` (
     `id` VARCHAR(191) NOT NULL,
-    `tournamentId` VARCHAR(191) NOT NULL,
+    `seasonId` VARCHAR(191) NOT NULL,
     `kickOff` TIMESTAMP NOT NULL,
     `extraTime` BOOLEAN NOT NULL,
     `penaltyShootout` BOOLEAN NOT NULL,
+    `tournamentId` VARCHAR(191) NULL,
 
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
@@ -60,7 +71,13 @@ CREATE TABLE `match-event-actors` (
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 -- AddForeignKey
-ALTER TABLE `matches` ADD CONSTRAINT `matches_tournamentId_fkey` FOREIGN KEY (`tournamentId`) REFERENCES `tournaments`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE;
+ALTER TABLE `seasons` ADD CONSTRAINT `seasons_tournamentId_fkey` FOREIGN KEY (`tournamentId`) REFERENCES `tournaments`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE;
+
+-- AddForeignKey
+ALTER TABLE `matches` ADD CONSTRAINT `matches_seasonId_fkey` FOREIGN KEY (`seasonId`) REFERENCES `seasons`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE;
+
+-- AddForeignKey
+ALTER TABLE `matches` ADD CONSTRAINT `matches_tournamentId_fkey` FOREIGN KEY (`tournamentId`) REFERENCES `tournaments`(`id`) ON DELETE SET NULL ON UPDATE CASCADE;
 
 -- AddForeignKey
 ALTER TABLE `match-teams` ADD CONSTRAINT `match-teams_matchId_fkey` FOREIGN KEY (`matchId`) REFERENCES `matches`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE;

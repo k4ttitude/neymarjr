@@ -1,5 +1,4 @@
 import {
-  Match,
   MatchEventActorType,
   MatchEventType,
   PrismaClient,
@@ -60,6 +59,20 @@ async function main() {
     ),
   );
 
+  // seed seasons
+  const seasonName = '2021-2022';
+  const seasons = await Promise.all(
+    tournaments.map((tour) =>
+      prisma.season.upsert({
+        where: {
+          name_tournamentId: { name: seasonName, tournamentId: tour.id },
+        },
+        update: {},
+        create: { name: seasonName, tournamentId: tour.id },
+      }),
+    ),
+  );
+
   // seed teams
   const teams = await Promise.all(
     EPL_TEAMS.map((item) =>
@@ -72,13 +85,14 @@ async function main() {
   );
 
   // seed matches
+
   const matches = await Promise.all(
     Array.from({ length: teams.length / 2 }).map(() =>
       prisma.match.upsert({
-        where: { id: '' },
+        where: {},
         update: {},
         create: {
-          tournamentId: tournaments[0].id,
+          seasonId: seasons[0].id,
           extraTime: false,
           penaltyShootout: false,
           kickOff: new Date(),
