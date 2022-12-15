@@ -85,16 +85,14 @@ async function main() {
   );
 
   // seed matches
-
+  await prisma.match.deleteMany({ where: { seasonId: seasons[0].id } });
   const matches = await Promise.all(
     Array.from({ length: teams.length / 2 }).map(() =>
       prisma.match.upsert({
-        where: {},
+        where: { id: '' },
         update: {},
         create: {
           seasonId: seasons[0].id,
-          extraTime: false,
-          penaltyShootout: false,
           kickOff: new Date(),
         },
       }),
