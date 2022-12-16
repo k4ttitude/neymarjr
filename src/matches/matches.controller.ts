@@ -6,11 +6,13 @@ import {
   Patch,
   Param,
   Delete,
+  Query,
 } from '@nestjs/common';
 import { MatchesService } from './matches.service';
 import { CreateMatchDto } from './dto/create-match.dto';
 import { UpdateMatchDto } from './dto/update-match.dto';
 import { ApiTags } from '@nestjs/swagger';
+import { FindMatchesArgs } from './args/matches.args';
 
 @Controller('matches')
 @ApiTags('matches')
@@ -23,8 +25,8 @@ export class MatchesController {
   }
 
   @Get()
-  findAll() {
-    return this.matchesService.findAll();
+  findMany(@Query() query: FindMatchesArgs) {
+    return this.matchesService.findMany(query);
   }
 
   @Get(':id')
