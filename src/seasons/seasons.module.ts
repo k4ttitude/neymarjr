@@ -8,5 +8,6 @@ import { TournamentsModule } from '../tournaments/tournaments.module';
   imports: [PrismaModule, TournamentsModule],
   controllers: [SeasonsController],
   providers: [SeasonsService],
+  exports: [SeasonsService],
 })
 export class SeasonsModule {}
