@@ -1,7 +1,7 @@
 import { NotFoundException } from '@nestjs/common';
 import { Prisma, PrismaClient } from '@prisma/client';
 
-type Transaction = Prisma.TransactionClient;
+export type Transaction = Prisma.TransactionClient;
 
 type InvalidKey = `$${string}`;
 type ValidKey<Keys> = Keys extends InvalidKey ? never : Keys;
@@ -18,7 +18,7 @@ export class CrudService<
     this.name = name;
   }
 
-  private runInTransaction<T>(
+  runInTransaction<T>(
     callback: (p: Transaction) => Promise<T>,
     transaction?: Transaction,
   ) {
